@@ -25,13 +25,11 @@ const LandingPage = () => {
     }
 
     setLoading(true);
-    setError(""); // Clear any previous errors
-
-    // Prepare form data for API call
+    setError("");
     const formData = new FormData();
     formData.append("url", website);
-    formData.append("is_first", "1"); // hardcoded value
-    formData.append("langcode", "en"); // hardcoded value
+    formData.append("is_first", "1");
+    formData.append("langcode", "en");
 
     try {
       // Make the API request
@@ -50,7 +48,6 @@ const LandingPage = () => {
       const data = await response.json();
       console.log("API Response:", data);
 
-      // Assuming you want to navigate with the API response data
       navigate("/checker", {
         state: { website, service, complianceData: data },
       });

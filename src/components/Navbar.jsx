@@ -9,7 +9,6 @@ const Navbar = () => {
         <img src={skynet_logo} alt="Logo" className="h-10" />
       </div>
 
-      {/* Language Select */}
       <div>
         <select
           className=" px-2 py-1 rounded focus:outline-none"
@@ -18,7 +17,6 @@ const Navbar = () => {
           <option value="en">en</option>
           <option value="es">es</option>
           <option value="fr">fr</option>
-          {/* Add more languages as needed */}
         </select>
       </div>
     </nav>

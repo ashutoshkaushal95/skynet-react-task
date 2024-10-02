@@ -3,7 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-50 p-4 flex justify-between items-center w-full text-slate-600">
-      {/* Privacy Policy and Terms */}
       <div className="text-sm">
         <a href="#" className="hover:underline">
           Privacy Policy
@@ -14,7 +13,6 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* Copyright */}
       <div className="text-sm">
         Copyright © {new Date().getFullYear()} Skynettechnologies.com
       </div>
